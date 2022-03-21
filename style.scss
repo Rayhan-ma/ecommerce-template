@@ -8,6 +8,10 @@ $fontRobot: "Roboto", sans-serif;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+  &::selection{
+    color: #fff;
+    background-color: #000
+  }
 }
 
 @import "./assets/partials/variables";
@@ -66,12 +70,6 @@ $fontRobot: "Roboto", sans-serif;
         }
       }
     }
-    // .menu-bar{
-    //   .container{
-
-    //   }
-
-    // }
   }
 }
 
