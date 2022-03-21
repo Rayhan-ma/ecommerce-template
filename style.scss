@@ -8,9 +8,9 @@ $fontRobot: "Roboto", sans-serif;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
-  &::selection{
+  &::selection {
     color: #fff;
-    background-color: #000
+    background-color: #000;
   }
 }
 
@@ -69,7 +69,7 @@ $fontRobot: "Roboto", sans-serif;
           }
         }
       }
-    } 
+    }
     .menu-bar {
       .container {
       }
@@ -132,25 +132,23 @@ $fontRobot: "Roboto", sans-serif;
 
     h4 {
       text-align: center;
-    margin-bottom: 0px;
-      padding-bottom: 4px ;
+      margin-bottom: 0px;
+      padding-bottom: 4px;
       font-size: 18px;
-      @include mediaQuery (200px, 768px ){
+      @include mediaQuery(200px, 768px) {
         font-size: 16px;
       }
     }
-    div{
-      
+    div {
       height: 0.5px;
       width: 100%;
       background-color: #909090;
-      
     }
-    @include mediaQuery (200px, 768px ){
+    @include mediaQuery(200px, 768px) {
       grid-template-columns: auto 179px auto;
     }
   }
-  
+
   .row {
     .cat-items {
       margin: 10px 0px;
@@ -174,12 +172,12 @@ $fontRobot: "Roboto", sans-serif;
     }
   }
 }
- //<---------categories section end
+//<---------categories section end
 
-//  newArrival section-starts  
+//  newArrival section-starts
 
-.newArrival-section{
-  background-color: #F9F9F9; 
+.newArrival-section {
+  background-color: #f9f9f9;
   padding: 35px;
   padding-bottom: 55px;
   .container {
@@ -350,11 +348,7 @@ $fontRobot: "Roboto", sans-serif;
 }
 //  newArrival-section-ends
 
-
-
-
-
-//offer section-starts 
+//offer section-starts
 .offer-section {
   background-color: #f0f0f0;
   display: flex;
@@ -363,7 +357,7 @@ $fontRobot: "Roboto", sans-serif;
   padding: 50px;
   .container {
     .row {
-        background-color: #fff;
+      background-color: #fff;
       .col-md-7 {
         height: 339px;
         padding: 0px;
@@ -375,8 +369,8 @@ $fontRobot: "Roboto", sans-serif;
         padding: 0px 12px;
         div {
           padding: 16px;
-          ul{
-            li{
+          ul {
+            li {
               list-style-type: circle;
             }
           }
@@ -388,14 +382,14 @@ $fontRobot: "Roboto", sans-serif;
             color: white;
             text-decoration: none;
           }
-          p{
-              margin: 5px;
-              font-size: 14px;
-              font-style: italic;
+          p {
+            margin: 5px;
+            font-size: 14px;
+            font-style: italic;
           }
         }
       }
     }
   }
-} 
+}
 //offer section-ends
