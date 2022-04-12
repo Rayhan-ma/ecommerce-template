@@ -1,4 +1,18 @@
-let btn = document.querySelector(".btn");
+//header js
+$("#men-sub").hover(function(){
+  $("#nav-sub-menu-wrapper").fadeToggle(200)
+})
+$("#women-sub").hover(function(){
+  $("#nav-sub-women").fadeToggle(200)
+})
+$("#top-cart").click(function(){
+  $("#cart-sub").fadeToggle(200)
+})
+//header js
+
+
+//newArrival js-starts
+let btn = document.querySelector(".btn0");
 let container = document.querySelector(".cont");
 let clo = document.querySelector(".close");
 
@@ -34,4 +48,18 @@ function modalPopUp( x , y , z ) {
 modalPopUp(btn , container , clo);
 modalPopUp(btn1 , container1 , clo1);
 modalPopUp(btn2 , container2 , clo2)
+//newArrival js-ends
 
+
+
+// *****  details section start *********\\
+let accordions = document.querySelectorAll('.accordion-container .accordion');
+
+accordions.forEach(acco =>{
+    acco.onclick = () =>{
+        accordions.forEach(subAcco => { subAcco.classList.remove('active') });
+        acco.classList.add('active');
+        
+    }
+});
+// *****  details section end *********\\
