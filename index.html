@@ -1,54 +1,940 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce Template</title>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
-<body>
-    <header class="heder-section">
 
-    </header>
+<body> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-    <section class="slider-section">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+  </head>
+
+  <body> 
+
+    <!-- header section start -->
+
+    <header class="header-section">
+      <div class="header">
+          <div class="top-bar">
+              <div class="container">
+                  <div class="para">
+                      <p>Free U.S. Shipping on Order above $99. Easy Returns.</p>
+                  </div>
+                  <div class="contact">
+                      <div class="top-links">
+                          <ul class="top-links-container">
+                              <li class="top-links-item"><a href="#">About</a></li>
+                              <li class="top-links-item"><a href="#">FAQS</a></li>
+                              <li class="top-links-item"><a href="#">Blogs</a></li>
+                              <li class="top-links-item-dropdown">
+                                  <a class="aaa" href="#">EN <i class="fa-solid fa-angle-down"> </i></a>
+                                  <ul class="top-links-sub-menu" >
+                                      <li class="sub-menu-item"><a href="#">
+                                              <img src="./assets/images/frenchFlag.png" alt="french-flag"> FR
+                                          </a></li>
+                                      <li class="sub-menu-item"><a href="#">
+                                              <img src="./assets/images/italianFlag.png" alt="italian-flag">
+                                              IT
+                                          </a></li>
+                                      <li class="sub-menu-item"><a href="#">
+                                              <img src="./assets/images/germanFlag.png" alt="german-flag">
+                                              DE
+                                          </a></li>
+                                  </ul>
+  
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="top-socials">
+                          <ul>
+                              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                              <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+                              <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                              <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="menu-bar">
+              <div class="menu-bar-wrapper">
+                  <div class="container">
+                  
+                      <div class="primary-menu">
+                          <a href="#"><img src="./assets/images/header-logo.png" alt="header-logo"></a>
+                              <ul>
+                                  <li><a href="#">Home</a></li>
+                                  <li><a id="men-sub" href="#">Men<i
+                                      class="fa-solid fa-angle-down"></i></a>
+                                  
+                                  </li>
+                                      
+                                  <li><a id="women-sub" href="#">Women<i
+                                      class="fa-solid fa-angle-down"></i></a></li>
+                                  <li><a href="#">Accessories</a></li>
+                                  <li><a href="#">Blog</a></li>
+                              </ul>
+                      </div>
+                      <div class="menu-misc">
+                          <div id="top-acount">
+                              <a href="#">
+                                  <i class="fa-solid fa-user-large"></i>
+                                  <span>Login</span>
+                              </a>
+                          </div>
+                          <div id="top-cart">
+                              <a href="#">
+                                  <i class="fa-solid fa-bag-shopping"></i>
+                                  <p><span>5</span></p>
+                              </a>
+                              <div id="cart-sub">
+                                  <div class="container">
+                                      <div class="cart-title">
+                                          <h4>Shopping Cart</h4>
+                                      </div>
+                                      <div class="cart-items">
+                                          <div class="item1">
+                                              <div class="item1-image">
+                                                  <a href="#">
+                                                      <img src="./assets/images/1.jpg" alt="">
+                                                  </a>
+                                              </div>
+                                              <div class="item1-content">
+                                                  <a href="#">Blue Round-Neck Tshirt with a Button</a>
+                                                  <span>$19.99</span>
+                                              </div>
+                                              <div class="item1-calculat">
+                                                  <span>x2</span>
+                                              </div>
+                                          </div>
+                                          <div class="item2">
+                                              <div class="item2-image">
+                                                  <a href="#">
+                                                      <img src="./assets/images/6.jpg" alt="">
+                                                  </a>
+                                              </div>
+                                              <div class="item2-content">
+                                                  <a href="#">Light Blue Denim Dress</a>
+                                                  <span>$24.99</span>
+                                              </div>
+                                              <div class="item2-calculat">
+                                                  <span>x3</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="cart-footer">
+                                          <span>$114.95</span>
+                                          <a href="#">View Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                          </div>
+                          <div id="top-search">
+                              <a href="#">
+                                  <i class="fa-solid fa-magnifying-glass"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="nav-sub-menu-wrapper">
+          <div class="nav-sub-menu">
+              <div class="nav-sub">
+                  <h1>Footwear</h1>
+                  <ul>
+                      <li><a href="#">Casual Shoes</a></li>
+                      <li><a href="#">Formal Shoes</a></li>
+                      <li><a href="#">Sports shoes</a></li>
+                      <li><a href="#">Flip Flops</a></li>
+                      <li><a href="#">Slippers</a></li>
+                      <li><a href="#">Flip Flops</a></li>
+                      <li><a href="#">Slippers</a></li>
+                      <li><a href="#">Sandals</a></li>
+                  </ul>
+              </div>
+              <div class="nav-sub">
+                  <h1>Sportswear</h1>
+                  <ul>
+                      <li><a href="#">Sports Casual Shirts</a></li>
+                      <li><a href="#">Sports T-Shirts</a></li>
+                      <li><a href="#">Sports Collared Tees</a></li>
+                      <li><a href="#">Sports Shoes</a></li>
+                      <li><a href="#">Jackets</a></li>
+                      <li><a href="#">Swimwears</a></li>
+                      <li><a href="#">Jackets</a></li>
+                      <li><a href="#">Swimwears</a></li>
+                  </ul>
+              </div>
+              <div class="nav-sub">
+                  <h1>Innerwears</h1>
+                  <ul>
+                      <li><a href="#">Boxers</a></li>
+                      <li><a href="#">Vests</a></li>
+                      <li><a href="#">Sleepwears</a></li>
+                      <li><a href="#">Flip Flops</a></li>
+                      <li><a href="#">Slippers</a></li>
+                      <li><a href="#">Sandals</a></li>
+                      <li><a href="#">Slippers</a></li>
+                      <li><a href="#">Sandals</a></li>
+                  </ul>
+              </div>
+              <div class="nav-sub1">
+                  <a href="#">
+                      <img src="./assets/images/menu-image.jpg" alt="">
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div id="nav-sub-women">
+          <div class="container">
+              <div class="sub-item1">
+                  <h1>Footwear</h1>
+                  <ul>
+                      <li><a href="#">Casual Shoes</a></li>
+                      <li><a href="#">Formal Shoes</a></li>
+                      <li><a href="#">Sports shoes</a></li>
+                      <li><a href="#">Flip Flops</a></li>
+                      <li><a href="#">Slippers</a></li>
+                      <li><a href="#">Sandals</a></li>
+                      <li><a href="#">Party Shoes</a></li>
+                  </ul>
+              </div>
+              <div class="sub-item2">
+                  <h1>Clothing</h1>
+                  <ul>
+                      <li><a href="#">Casual Shirts</a></li>
+                      <li><a href="#">T-Shirts</a></li>
+                      <li><a href="#">Collared Tees</a></li>
+                      <li><a href="#">Pants / Trousers</a></li>
+                      <li><a href="#">Ethnic Wear</a></li>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">Swimwear</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  
+  </header>
+  
+   <!-- header section end -->
+
+
+< 
+    <!-- Slider section Start -->
+    <section id="myCarousel" class=" slider-section carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="BG-1 carousel-item active">
+                <div class="slider-txt">
+                    <p>Fresh Arrival</p>
+                    <h1>Winter / 2022</h1>
+                    <a href="#" type="button">menswear</a>
+                </div>
+            </div>
+            <div class="BG-2 carousel-item">
+                <div class="slider-txt">
+                    <p>Summer Collection</p>
+                    <h1>SALE 40% OFF</h1>
+                    <a href="#" type="button">shop beachwear</a>
+                </div>
+            </div>
+            <div class="BG-3 carousel-item">
+                <div class="slider-txt">
+                    <h1>NEW ARRIVALS / 18</h1>
+                    <a href="#" type="button">shop womenswear</a>
+                </div>
+            </div>
+        </div>
 
     </section>
+    <!-- Slider section End -->
 
-    <section class="catgory-section">
-
+    <!-- Categories section Starts -->
+    <section class="container categories-section ">
+        <div class="cat-heading">
+            <div></div>
+            <h4>Shop popular categories</h4>
+            <div></div>
+        </div>
+        <div class="catItems-container">
+            <a href="#" class=" row1-col1 cat-items" style="height: 200px; background-image: url(./assets/images/108.jpg); ">
+            <div> MEN</div>
+            </a>
+            <a href="#" class=" row1-col2 cat-items" style="height: 200px; background-image: url(./assets/images/109.jpg); ">
+              <div>WOMEN</div>
+            </a>
+            <a href="#" class=" row2 cat-items" style="height: 200px; background-image: url(./assets/images/111.jpg);">
+                <div class="txt-felx-end">SPORTS WEAR</div>
+                <div class="cat-button"><button>BROWSE NOW</button></div>
+            </a>
+            <a href="#" class=" row2 cat-items" style="height: 200px; background-image: url(./assets/images/110.jpg); ">
+              <div class="txt-felx-end"> FOOT WEAR</div>
+              <div class="cat-button"><button>SHOP NOW</button></div>
+            </a>
+            <a href="#" class=" row2 cat-items" style="height: 200px; background-image: url(./assets/images/106.png);">
+              <div class="txt-felx-end">POPULAR PRODUCT</div>
+              <div class="cat-button"><button>SHOP NOW</button></div>
+            </a>
+        </div>
     </section>
-    <section class="feature-product-section">
+    <!-- Categories section End -->
+    
+    <!-- feature product section-starts -->
 
+    <div class="container featureProduct-section">
+        <h1>New Arrival Item </h1>
+        <p>We provide to best product in Bangladesh and commmitted to provide the best service</p>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            <img class="pic-1" src="./assets/images/109.jpg" alt="product-image">
+                            <img class="pic-2" src="./assets/images/108.jpg" alt="product-image">
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a>
+                        <ul class="product-links">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <h1 class="title"><a href="#">Women's Gown</a></h1>
+                        <div class="price"><span>1000 BDT</span> 759.90 BDT</div>
+                        <div class="btn">
+                            <a href="#">Buy Now</a>  
+                            <a href="#">Add To Card</a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            <img class="pic-1" src="./assets/images/109.jpg" alt="product-image">
+                            <img class="pic-2" src="./assets/images/108.jpg" alt="product-image">
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a>
+                        <ul class="product-links">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <h1 class="title"><a href="#">Ladis Tops</a></h1>
+                        <div class="price"><span></span>1500.50BDT</div>
+                        <div class="btn">
+                            <a href="#">Buy Now</a>  
+                            <a href="#">Add To Card</a> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            <img class="pic-1" src="./assets/images/109.jpg" alt="product-image">
+                            <img class="pic-2" src="./assets/images/108.jpg" alt="product-image">
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a>
+                        <ul class="product-links">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <h1 class="title"><a href="#">Women's Gown</a></h1>
+                        <div class="price"><span>1000 BDT</span> 759.90 BDT</div>
+                        <div class="btn">
+                            <a href="#">Buy Now</a>  
+                            <a href="#">Add To Card</a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            <img class="pic-1" src="./assets/images/109.jpg" alt="product-image">
+                            <img class="pic-2" src="./assets/images/108.jpg" alt="product-image">
+                        </a>
+                        <a href="#" class="product-like-icon" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a>
+                        <ul class="product-links">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <h1 class="title"><a href="#">Ladis Tops</a></h1>
+                        <div class="price"><span></span>1500.50BDT</div>
+                        <div class="btn">
+                            <a href="#">Buy Now</a>  
+                            <a href="#">Add To Card</a> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- feature product section-ends -->
+      
+    <!-- newArrival section-starts  -->
+    <section class="newArrival-section container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="row first-row">
+                <div
+                  class="col-md-12 col-lg-12 text-center d-flex align-items-center"
+                >
+                  <div class="txtFormat mb1">
+                    <div class="text-black-50 mb-1">new-arrivals</div>
+                    <h1>fresh arrivals / autumn 18</h1>
+                    <p class="mt-2 mb-3 text-muted">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Animi, aliquid.
+                    </p>
+                    <a href="#">shop now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row sec-row">
+                <div class="col-sm-6">
+                  <div class="custom-modal-section1">
+                    <span class="btn1">
+                      <img
+                        width="100%"
+                        style="max-height: 284px"
+                        src="./assets/images/testImgForPUM.png"
+                        alt="popUpImg"
+                      />
+                    </span>
+  
+                    <!-- &#9654; for play icon -->
+  
+                    <div class="cont1">
+                      <span class="close1"> </span>
+  
+                      <img
+                        style="z-index: 9999999"
+                        src="./assets/images/testImgForPUM.png"
+                        alt="popUpImg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="custom-modal-section2">
+                    <span class="btn2">
+                      <img
+                        width="100%"
+                        style="max-height: 284px"
+                        src="./assets/images/testImgForPUM.png"
+                        alt="popUpImg"
+                      />
+                    </span>
+  
+                    <div class="cont2">
+                      <span class="close2"> </span>
+                      <img
+                        style="z-index: 9999999 ;"
+                        src="./assets/images/testImgForPUM.png"
+                        alt="popUpImg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="custom-modal-section">
+                <div class="custom-modal">
+                  <span class="btn0">
+                    <i style="font-size: 24px" class="fa">&#xf04b;</i>
+                    <!-- &#9654; -->
+                  </span>
+                </div>
+                <div class="cont">
+                  <span class="close">
+                    <i style="font-size: 24px" class="fa">&#xf00d;</i>
+                  </span>
+                  <!-- <video src="./assets/video/881.mp4"></video> -->
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/PdFuJ8a0vNo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
     </section>
-
-    <section class="newArrival-section">
-
+    <!-- newArrival-section-ends -->
+  
+    <section class="product-section"></section>
+  
+    <!-- offer section-starts -->
+    <section class="offer-section container-fluid">
+        <div class="container">
+          <div class="row">
+            <img class="col-md-7" src="./assets/images/testImgForPUM.png" alt="offerSection-image" />
+            <div class="col-md-5">
+              <div>
+                <h3>Sign Up to get most out of shopping</h3>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consec</li>
+                  <li>Adipisicing elit. Impedit!</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <a href="#">Sign Up</a>
+                <p class="text-muted">Lorem ipsum dolor sit</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
-    <section class="product-section">
+  
 
+    <section class="brand-section"> </section>
+    <section class="slider-section"></section>
+
+ 
     </section>
+    <section class="product-section"></section>
 
-    <section class="offer-section">
-
+    <!-- offer section-starts -->
+    <section class="offer-section container-fluid">
+      <div class="container">
+        <div class="row">
+          <img class="col-md-7" src="./assets/images/testImgForPUM.png" alt="offerSection-image" />
+          <div class="col-md-5">
+            <div>
+              <h3>Sign Up to get most out of shopping</h3>
+              <ul>
+                <li>Lorem ipsum dolor sit amet consec</li>
+                <li>Adipisicing elit. Impedit!</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+              <a href="#">Sign Up</a>
+              <p class="text-muted">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- offer section-ends -->
 
     <section class="details-section">
 
     </section>
 
-    <section class="brand-section">
+    <section class="brand-section"> 
+    <section class="slider-section"></section>
 
+    <section class="catgory-section"></section>
+    <section class="feature-product-section"></section>
+
+
+    <section class="details-section"></section>
+=======
+    <section class="catgory-section"></section>
+    <section class="feature-product-section"></section>
+
+
+    <!-- ======================== details section start========================= -->
+   
+ <section class="details-section">
+       
+  <div class="box-container">
+
+      <div class="box">
+         <a href="#">
+             <i class="accordion-closed icon-ok-circle"></i>
+             <i class="fa - fa fa-gift"></i>
+         </a>
+          <h4>100% ORIGINAL</h4>
+          <p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Backgroun
+
+          </p>
+      </div>
+
+      <div class="box">
+         <a href="#">
+              <i class="fas fa-globe"></i>
+         </a>
+          <h4>FREE SHIPPING</h4>
+          <p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.
+
+          </p>
+      </div>
+     
+
+       
+      <div class="box">
+          <i class="fa-solid fa-arrow-rotate-left"></i>
+          <h4>30-DAYS RETURNS</h4>
+          <p>You have complete easy control on each & every element that provides endless customization.
+
+          </p>
+      </div>
+
+      <div class="box">
+         <a href="#"><i class="fa -solid fa-wallet"></i></a>
+          <h4>PAYMENT OPTIONS</h4>
+          <p>We accept Visa, MasterCard and American Express. And We also Deliver by COD(only in US)
+
+          </p>
+      </div>
+      
+
+  </div>
+<div class="faq">
+  <div class="accordion-container">
+
+      <div class="accordion">
+          <div class="accordion-heading">
+              <h4>Our Mission</h4>
+              <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordioin-content">
+              Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+          </p>
+      </div>
+
+      <div class="accordion">
+          <div class="accordion-heading">
+              <h4>What we Do?</h4>
+              <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordioin-content">
+              Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.
+          </p>
+      </div>
+
+      <div class="accordion">
+          <div class="accordion-heading">
+              <h4>Our Company's Values</h4>
+              <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordioin-content">
+              Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.
+          </p>
+      </div>
+
+      <div class="accordion">
+          <div class="accordion-heading">
+              <h4>Our Return Policy</h4>
+              <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accordioin-content">
+              Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.
+          </p>
+       </div>
+
+     </div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ======================== details section end ========================= --> 
+
+ 
+    <!-- brand area-starts -->
+
+    <section class="brand-area container">
+        <div class="row singleBrand-container ">
+          <div class="col-12">
+            <div class="brand-heading">
+              <hr><p>Brands who give Flat <span>40%</span>Off</p><hr>
+            </div>
+            <ul>
+              <li class="singleBrand">
+                  <a href="#"><img class="img-fluid" src="./assets/images/adi 1.png" alt="Brand-1 "/></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#"><img class="img-fluid" src="./assets/images/jeans 2.png" alt="Brand-2 "/></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/con 3.png" alt="Brand-3 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/logo4.png" alt="Brand-4" /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/ck 5.png" alt="Brand-5 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/lee 6.png" alt="Brand-6" /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/lev 7.png" alt="Brand-7 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/desn 8.png" alt="Brand-8 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/gu 9.png" alt="Brand-9 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/m 10.png" alt="Brand-10 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/pa 11.png" alt="Brand-11 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/ply 12.png" alt="Brand-12 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/pu 13.png" alt="Brand-13 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/r 14.png" alt="Brand-14 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/rol 15.png" alt="Brand-15 " /></a>
+              </li>
+              <li class="singleBrand">
+                  <a href="#">
+                  <img class="img-fluid" src="./assets/images/wri 16.png" alt="Brand-16" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+    <!-- brand area-ends -->
+    
+    <!-- ====================== before-footer Area start======================== --> 
+
+
+    <section class="before-footer-stick bg-white m-0 py-3 border-bottom">
+        <div class="container clearfix">
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-footer-features mb-3 mb-lg-3 ">
+                        <i class="fa fa-globe"></i>
+                        <h5 class=" mb-0 ms-2 fw-semibold">
+                            <a href="#">Free Shipping</a><span class="fw-normal text-muted"> &amp; Easy    Returns</span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shop-footer-features mb-3 mb-lg-3">
+                        <i class="fa fa-book-open-reader"></i>
+                        <h5 class=" mb-0 ms-2">
+                            <a href="#">Geniune Products</a><span class="fw-normal text-muted"> Guaranteed</span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="shop-footer-features mb-3 mb-lg-3">
+                        <i class="fa fa-lock"></i>
+                        <h5 class=" mb-0 ms-2">
+                            <a href="#">256-Bit</a> <span class="fw-normal text-muted">Secured Checkouts</span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+  
+    <!-- ====================== before-footer Area end =================== -->
 
-    <section class="before-footer-section">
 
-    </section>
 
-    <footer class="footer-section">
-        
+    <!-- ======================footer Area start ======================== -->
+
+    <footer class="footer" class="bg-transparent border-0">
+        <div class="container clearfix">
+          <div class="footer-widgets-wrap pb-3 border-bottom clearfix">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-3 nott">Features</h4>
+                  <ul class="list-unstyled iconlist ms-0">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Paid with Moblie</a></li>
+                    <li><a href="#">Status</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-3 nott">Support</h4>
+                  <ul class="list-unstyled iconlist ms-0">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-3 nott">Trending</h4>
+                  <ul class="list-unstyled iconlist ms-0">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Forums</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-6">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-3 nott">Get to Know us</h4>
+                  <ul class="list-unstyled iconlist ms-0">
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Agency</a></li>
+                    <li><a href="#">eCommerce</a></li>
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">OnePage</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" newsletter col-lg-4 col-md-8">
+                <div class="widget clearfix">
+                  <h4 class="ls0 mb-3 nott">Subscribe Now</h4>
+                  <div class="widget subscribe-widget mt-2 clearfix">
+                    <p class="mb-4">
+                      <strong>Subscribe</strong> to Our Newsletter to get
+                      Important News, Amazing Offers &amp; Inside Scoops:
+                    </p>
+                    <div class="widget-subscribe-form-result"></div>
+                    <form
+                      id="widget-subscribe-form"
+                      method="post"
+                      class="mt-1 mb-0 d-flex"
+                    >
+                      <input
+                        type="email"
+                        id="widget-subscribe-form-email"
+                        name="widget-subscribe-form-email"
+                        class="form-control sm-form-control required email"
+                        placeholder="Enter your Email Address"
+                      />
+                      <button class="button fw-normal ms-1 my-0" type="submit">
+                        SubscribeNow
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="copyrights" class="bg-transparent">
+          <div class="container clearfix">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-md-6">
+                Copyrights © 2022 All Rights Reserved by Our Team.<br />
+                <div class="copyright-links">
+                  <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a>
+                </div>
+              </div>
+              <div
+                class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0"
+              >
+                <div class="copyrights-menu copyright-links clearfix">
+                  <a href="#">About</a>/<a href="#">Features</a>/<a href="#"
+                    >FAQs</a
+                  >/<a href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </footer>
+  
+    <!-- ======================footer Area end ======================== -->
+ 
 
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
